@@ -24,14 +24,14 @@ class Application:
                     print("Thank you. Your remaining balance is £" + str(user.get_balance()))
                 else:
                     print("Thank you. Your remaining balance is (-) £" + str(abs(user.get_balance())))
-                input("")
+                input("...")
             elif user_choice == '2':
                 print("_" * 20)
                 if user.get_balance() >= 0:
                     print("Thank you. Your remaining balance is £" + str(user.get_balance()))
                 else:
                     print("Thank you. Your remaining balance is (-) £" + str(abs(user.get_balance())))
-                input("")
+                input("...")
             elif user_choice == '3':
                 print("_" * 20)
                 print(user)
@@ -41,7 +41,7 @@ class Application:
                 break
             else:
                 print("Invalid response. Main Menu restarting")
-                input("")
+                input("...")
 
         print("Goodbye.")
         input("")
@@ -73,7 +73,7 @@ class Application:
             print("Thank you " + name + ". Your account for " + business_name + " has been set up.")
         else:
             print("That was an invalid response. Application restarting.")
-            input("")
+            input("...")
             self.open_app()
         return user
 
