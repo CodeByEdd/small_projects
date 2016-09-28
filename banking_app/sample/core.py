@@ -77,4 +77,10 @@ class Application:
             self.open_app()
         return user
 
-Application()
+
+def run_app():
+    Application()
+
+
+if __name__ == '__main__':
+    run_app()
