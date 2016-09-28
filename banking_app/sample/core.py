@@ -12,6 +12,7 @@ class Application:
             print("[1] Transfer Money")
             print("[2] View Balance")
             print("[3] View Account Details")
+            print("[9] Quit")
             user_choice = input(">> ")
 
             if user_choice == '1':
@@ -36,9 +37,14 @@ class Application:
                 print(user)
                 print("Your balance is: " + str(user.get_balance()))
                 input("")
+            elif user_choice == '9':
+                break
             else:
                 print("Invalid response. Main Menu restarting")
                 input("")
+
+        print("Goodbye.")
+        input("")
 
     def open_app(self):
         print("Welcome to your Banking App")
@@ -70,6 +76,5 @@ class Application:
             input("")
             self.open_app()
         return user
-
 
 Application()
